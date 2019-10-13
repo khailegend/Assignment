@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
+  Dangky(value) {
+    console.log(value)
+  };
   constructor() { }
 
   ngOnInit() {

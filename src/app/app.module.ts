@@ -8,6 +8,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import {RouterModule} from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
+import {FormsModule } from '@angular/forms';
+import { StudentService } from './student.service';
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
   
     RouterModule.forRoot([ 
@@ -30,7 +33,9 @@ import { ContactComponent } from './contact/contact.component';
     ]),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    StudentService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
