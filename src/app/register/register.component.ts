@@ -42,6 +42,7 @@ export class RegisterComponent implements OnInit {
       
     }
     const newstudent: Student = new Student();
+    newstudent.id = email;
     newstudent.firstname =  firstname;
     newstudent.lastname = lastname;
     newstudent.email = email;
