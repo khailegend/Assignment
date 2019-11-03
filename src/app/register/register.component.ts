@@ -12,7 +12,7 @@ export class RegisterComponent implements OnInit {
   @Input() students: Student[];
   student = {
     firstname:null,
-    last:null,
+    lastname:null,
     email:null,
     phone:null,
     password:null,
