@@ -1,0 +1,23 @@
+[
+    {
+        "firstname": "Tèo",
+        "lastname": "Nguyễn Văn",
+        "email": "teonv@fpt.edu.vn",
+  "password": "123456789",
+         "phone": "0909123456"
+    },
+    {
+        "firstname": "Phèo",
+        "lastname": "Nguyễn Văn",
+        "email": "pheonv@fpt.edu.vn",
+  "password": "12345678910",
+         "phone": "0909654321"
+    },
+    {
+        "firstname": "Khải",
+        "lastname": "Nhan Chí",
+        "email": "nhanchikhai@gmail.com",
+        "password": "0909458718",
+         "phone": "0382174344"
+    }
+  ]

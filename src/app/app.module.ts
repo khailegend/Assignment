@@ -10,6 +10,12 @@ import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import {FormsModule } from '@angular/forms';
 import { StudentService } from './student.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ListsubjectComponent } from './listsubject/listsubject.component';
+import { TestComponent } from './test/test.component';
+import {NgxPaginationModule} from 'ngx-pagination'
+ 
+
 
 
 @NgModule({
@@ -18,18 +24,24 @@ import { StudentService } from './student.service';
     HomeComponent,
     SignInComponent,
     RegisterComponent,
-    ContactComponent
+    ContactComponent,
+    ListsubjectComponent,
+    TestComponent
   ],
   imports: [
     FormsModule,
+    NgxPaginationModule,
     BrowserModule,
-  
+    HttpClientModule,
     RouterModule.forRoot([ 
       { path: '' , component:HomeComponent},
       { path: 'home' , component:HomeComponent},
       { path: 'dangnhap', 	component:SignInComponent },
       { path: 'dangky', 	component:RegisterComponent },
-      { path: 'lienhe', 	component:ContactComponent }
+      { path: 'lienhe', 	component:ContactComponent },
+      { path: 'danhmucmonhoc', 	component:ListsubjectComponent },
+      { path: 'test/:id', 	component:TestComponent },
+      { path: 'home/:id', 	component:HomeComponent },
     ]),
     AppRoutingModule
   ],

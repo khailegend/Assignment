@@ -1,3 +1,12 @@
 #menu_top nav ul li {
     margin: 0px 20px 0px 20px;
 }
+
+#footer {
+    height: 100px;
+    width: 100%;
+}
+
+#ft {
+    margin: 20px 0px 0px 600px ;
+}

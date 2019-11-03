@@ -1,0 +1,19 @@
+<div *ngIf ="tests" >
+    
+    <h1 id="name">{{tests.name}}</h1><hr><br>
+    <div *ngFor =" let t of tests.arr ">
+        <form>
+           
+            <ul class="custom-control custom-radio"><strong>CÂU HỎI:</strong> {{t.Text}}
+                <li *ngFor=" let tt of t.Answers" type="none" style="margin: 0px 0px 0px 50px;">
+                    <input type="radio" class="custom-control-input" id="{{tt.Id}}" name="check{{t.AnswerId}}">    
+                    <label class="custom-control-label" for="{{tt.Id}}">{{tt.Text}}</label>
+                </li>
+            </ul>
+           
+        </form>
+    </div>
+</div>
+
+    
+

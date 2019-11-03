@@ -26,7 +26,7 @@
           Tài khoản
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" [routerLink]="['/dangky']">Đăng ký</a>
+          <a class="dropdown-item" routerLink='dangky'>Đăng ký</a>
           <a class="dropdown-item" [routerLink]="['/dangnhap']">Đăng nhập</a>
           <a class="dropdown-item" href="#">Quên mật khẩu</a>
           <div class="dropdown-divider"></div>
@@ -39,14 +39,14 @@
   </nav>
 </div><br>
 <div class="row">
-  <div class="col-9">
+  <div class="col-9" style="margin: 0px -30px 0px 0px;">
     <router-outlet></router-outlet>
   </div>
-  <div id="menu_left" class="col-3" style="margin: -23px 0px 0px 0px;">
+  <div id="menu_left" class="col-3" style="margin: -23px 0px 0px 30px;">
     <div class="card">
       <div class="card-header">
         <i class="fas fa-list"></i>
-        <strong> Danh mục</strong>
+        <strong><a class="text-dark" routerLink = "danhmucmonhoc"> Danh mục môn học </a></strong>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><a href="#" class="text-dark">Kiểm thử và thiết kế</a></li>
@@ -62,6 +62,15 @@
         <li class="list-group-item"><a href="#" class="text-dark">Lập trình hướng đối tượng với java</a></li>
         <li class="list-group-item"><a href="#" class="text-dark">Lập trình ASP.NET</a></li>
       </ul>
+    </div>
+  </div>
+  <div id="footer" class="bg-dark">
+    
+    <div id="ft" class="text-light">
+        
+        <strong>@Programmer:</strong> Nhan Chí Khải <br>
+        <strong>@Class:</strong> CD18LW(CLC)<br>
+        <strong>@Project:</strong> Assignment
     </div>
   </div>
 </div>
