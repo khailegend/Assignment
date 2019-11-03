@@ -1,5 +1,6 @@
 export class Test {
     id: string ;
+    name : string ;
     arr: [
         {
         Id : string , 
