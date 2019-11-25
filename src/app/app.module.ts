@@ -15,7 +15,11 @@ import { ListsubjectComponent } from './listsubject/listsubject.component';
 import { TestComponent } from './test/test.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
-import { ChangepasswordComponent } from './changepassword/changepassword.component'
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
+import { ShowpassComponent } from './showpass/showpass.component';
+import { RepassComponent } from './repass/repass.component';
+import { SignupdateComponent } from './signupdate/signupdate.component';
+import { UpdateComponent } from './update/update.component'
  
 
 
@@ -30,7 +34,11 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
     ListsubjectComponent,
     TestComponent,
     ForgotpasswordComponent,
-    ChangepasswordComponent
+    ChangepasswordComponent,
+    ShowpassComponent,
+    RepassComponent,
+    SignupdateComponent,
+    UpdateComponent
   ],
   imports: [
     FormsModule,
@@ -42,12 +50,17 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
       { path: 'home' , component:HomeComponent},
       { path: 'dangnhap', 	component:SignInComponent },
       { path: 'dangky', 	component:RegisterComponent },
+      { path: 'doimatkhau', 	component:RepassComponent },
       { path: 'quenmatkhau', 	component:ForgotpasswordComponent },
+      { path: 'capnhattaikhoan', 	component:SignupdateComponent },
       { path: 'lienhe', 	component:ContactComponent },
       { path: 'dangnhap/danhmucmonhoc', 	component:ListsubjectComponent },
       { path: 'test/:id', 	component:TestComponent },
       { path: ':id/danhmucmonhoc', 	component:ListsubjectComponent},
       { path: ':id/doimatkhau', 	component:ChangepasswordComponent},
+      { path: ':id/hienmatkhau', 	component:ShowpassComponent},
+      { path: ':id/capnhattaikhoan', 	component:UpdateComponent},
+      
 
       
     ]),

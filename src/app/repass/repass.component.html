@@ -1,0 +1,22 @@
+<div  class="card" style="box-shadow: 0.1em 0.1em  0.5em ;" >
+        <form class="text-center border border-light p-5" >
+    
+            <p class="h4 mb-4">Change Password</p>
+    
+            <!-- Email -->
+            <input type="email" name="email" [(ngModel)]="email" [ngModelOptions]="{standalone:true}"
+                id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+            <input type="password" name="password" [(ngModel)]="password" [ngModelOptions]="{standalone:true}"
+                id="defaultLoginFormPassword" class="form-control mb-4" placeholder="password">
+            
+            <!-- Sign in button -->
+            <button class="btn btn-info btn-block my-4" type="submit" (click)="dangnhap();">Change Password</button>
+    
+    
+            <!-- Register -->
+            <p>Not a member?
+                <a [routerLink]="['/dangky']">Register</a>
+            </p>
+        </form>
+    
+    </div>

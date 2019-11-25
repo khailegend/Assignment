@@ -4,6 +4,7 @@ import { Student } from '../models/student';
 import { StudentService } from '../student.service';
 
 
+
 @Component({
   selector: 'app-forgotpassword',
   templateUrl: './forgotpassword.component.html',
@@ -12,14 +13,20 @@ import { StudentService } from '../student.service';
 export class ForgotpasswordComponent implements OnInit {
   @Input() students: Student[]; 
   
+  
   listemail : any[];
 
   email: null;
-  constructor( private studentService: StudentService) { }
+  constructor( private studentService: StudentService,
+                ) { }
 
   ngOnInit() {
     this.studentService.getStudents().subscribe(data => this.students= data);
+    
   }
+
+  
+
   id = null ;
   makeid(length) {
     var result           = '';
@@ -65,7 +72,7 @@ export class ForgotpasswordComponent implements OnInit {
         alert("Please enter your email and verification code")}
       else if(yes == 1){
           alert("Logged in successfully")
-          window.location.href = this.email+"/doimatkhau" ;
+          window.location.href = this.email+"/hienmatkhau" ;
           
       }
       else if(yes == 2){

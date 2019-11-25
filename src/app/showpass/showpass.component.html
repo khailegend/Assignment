@@ -1,0 +1,14 @@
+<div *ngIf="student" class="card" style="box-shadow: 0.1em 0.1em  0.5em ;">
+    <form class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Show Password</p>
+
+        <p><strong>Tài khoản: </strong>{{student.email}}</p>
+        <!-- Password -->
+        <strong>Mật khẩu là: </strong>
+        <input style="border: 1px solid white;" type="text" [(ngModel)]="student.password" [ngModelOptions]="{standalone:true}">
+        
+        <button type="button" class="btn btn-warning" (click)="goBack()"><strong>Back</strong></button>
+
+    </form>
+</div>
