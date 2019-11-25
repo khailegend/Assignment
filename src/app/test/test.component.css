@@ -1,0 +1,53 @@
+
+
+#card {
+    box-shadow: 0.2em 0.2em 0.5em;
+}
+
+#btnpage {
+    margin: 10px 0px 0px 0px;
+}
+
+#btnpage button {
+    
+    width: 300px;
+    
+}
+
+#btnpage #buttonfinal {
+    margin: 0px 0px 0px 37%;
+    width: 298px;
+    box-shadow: 0.2em 0.2em 0.5em;
+}
+
+h1 {
+    text-shadow: 0.1em 0.2em 0.2em;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}

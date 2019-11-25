@@ -23,12 +23,12 @@
     <div class="btn-group">
       <div class="dropdown" style="margin: 0px 0px 0px 40px;">
         <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
-          Tài khoản
+          <a  id="taikhoan">Tài khoản</a>
         </button>
         <div class="dropdown-menu">
           <a class="dropdown-item" routerLink='dangky'>Đăng ký</a>
           <a class="dropdown-item" [routerLink]="['/dangnhap']">Đăng nhập</a>
-          <a class="dropdown-item" href="#">Quên mật khẩu</a>
+          <a class="dropdown-item" [routerLink]="['/quenmatkhau']">Quên mật khẩu</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Đăng xuất</a>
           <a class="dropdown-item" href="#">Đổi mật khẩu</a>
@@ -46,7 +46,7 @@
     <div class="card">
       <div class="card-header">
         <i class="fas fa-list"></i>
-        <strong><a class="text-dark" routerLink = "danhmucmonhoc"> Danh mục môn học </a></strong>
+        <strong><a class="text-dark" routerLink ="dangnhap" > Danh mục môn học </a></strong>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><a href="#" class="text-dark">Kiểm thử và thiết kế</a></li>

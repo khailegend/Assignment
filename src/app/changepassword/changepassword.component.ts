@@ -1,36 +1,26 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Subject } from '../models/subject';
 import { StudentService} from '../student.service';
 import { ActivatedRoute} from '@angular/router'; 
 import { ParamMap} from '@angular/router'; 
 import { error } from '@angular/compiler/src/util';
 import { Student } from '../models/student';
-import { ErrorHandler, Injectable} from '@angular/core';
-
 
 @Component({
-  selector: 'app-listsubject',
-  templateUrl: './listsubject.component.html',
-  styleUrls: ['./listsubject.component.css']
+  selector: 'app-changepassword',
+  templateUrl: './changepassword.component.html',
+  styleUrls: ['./changepassword.component.css']
 })
-export class ListsubjectComponent implements OnInit {
-  itempage = 4;
-  currpage = 1;
-  paginate;
-  @Input() subjects: Subject[];
+export class ChangepasswordComponent implements OnInit {
   @Input() student : Student;
-  constructor( private studentService : StudentService,
-               private route: ActivatedRoute,) { }
+
+  constructor(private studentService: StudentService, 
+    private route: ActivatedRoute,) { }
 
   ngOnInit() {
-    this.studentService.getSubjects().subscribe(data => this.subjects= data);
     this.loadStudent();
-   
     
   }
-
-  
 
   loadStudent(): void {
     const id = this.route.snapshot.paramMap.get('id');
@@ -39,6 +29,15 @@ export class ListsubjectComponent implements OnInit {
     this.studentService.getStudentById(id).subscribe(student => this.student = student);          
   }
 
-  
+  save(): void {
+    this.studentService.updatestudent(this.student).subscribe(()=> this.goBack());
+  }
 
+  goBack(){
+    window.history.back();
+  }
+
+  uppasscurrent() {
+     document.getElementById("newFormPassword").value = null;
+  }
 }

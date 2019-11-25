@@ -32,39 +32,34 @@ export class StudentService {
   }
 
   getStudents(): Observable<Student[]> {
-    return this.http.get<Student[]>(this.studentsURL).pipe(
-      tap(receivedStudent => console.log(`receivedStudent = ${JSON.stringify(receivedStudent)}`)),
-      catchError(error => of([]))
-    );
+    return this.http.get<Student[]>(this.studentsURL)
   }
   getSubjects(): Observable<Subject[]> {
-    return this.http.get<Subject[]>(this.subjectsURL).pipe(
-      tap(receivedSubject => console.log(`receivedStudent = ${JSON.stringify(receivedSubject)}`)),
-      catchError(error => of([]))
-    );
+    return this.http.get<Subject[]>(this.subjectsURL)
   }
   getTest(): Observable<Test[]> {
-    return this.http.get<Test[]>(this.testURL).pipe(
-      tap(receivedTest => console.log(`receivedTest = ${JSON.stringify(receivedTest)}`)),
-      catchError(error => of([]))
-    );
+    return this.http.get<Test[]>(this.testURL)
   }
   getTestById(id: string ):Observable<Test>{
     const url = `${this.testURL}/${id}`;
-    return this.http.get<Test>(url).pipe(
-      tap(selectedTest => console.log(`selected test = ${JSON.stringify(selectedTest)}`)),
-      catchError(error => of(new Test()))
-    ); 
+    return this.http.get<Test>(url)
+  };
+
+  getStudentById(id: string ):Observable<Student>{
+    const url = `${this.studentsURL}/${id}`;
+    return this.http.get<Student>(url)
   };
 
   
-
-
+  updatestudent( student: Student ): Observable<any> {
+    const httpOptions ={
+      headers: new HttpHeaders({'Content-Type': 'application/json'})
+    }; 
+    return this.http.put(`${this.studentsURL}/${student.id}`, student , httpOptions)
+  };
+  
 
   addstudent(newstudent: Student ): Observable<Student> {
-    return this.http.post<Student>(this.studentsURL , newstudent , httpOptions).pipe(
-    tap((student: Student) => console.log(`inserted movie = ${JSON.stringify(student)}`)),
-      catchError(error => of(new Student()))
-    );
+    return this.http.post<Student>(this.studentsURL , newstudent , httpOptions)
   }
 }

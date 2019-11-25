@@ -13,7 +13,9 @@ import { StudentService } from './student.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ListsubjectComponent } from './listsubject/listsubject.component';
 import { TestComponent } from './test/test.component';
-import {NgxPaginationModule} from 'ngx-pagination'
+import {NgxPaginationModule} from 'ngx-pagination';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component'
  
 
 
@@ -26,7 +28,9 @@ import {NgxPaginationModule} from 'ngx-pagination'
     RegisterComponent,
     ContactComponent,
     ListsubjectComponent,
-    TestComponent
+    TestComponent,
+    ForgotpasswordComponent,
+    ChangepasswordComponent
   ],
   imports: [
     FormsModule,
@@ -38,10 +42,14 @@ import {NgxPaginationModule} from 'ngx-pagination'
       { path: 'home' , component:HomeComponent},
       { path: 'dangnhap', 	component:SignInComponent },
       { path: 'dangky', 	component:RegisterComponent },
+      { path: 'quenmatkhau', 	component:ForgotpasswordComponent },
       { path: 'lienhe', 	component:ContactComponent },
-      { path: 'danhmucmonhoc', 	component:ListsubjectComponent },
+      { path: 'dangnhap/danhmucmonhoc', 	component:ListsubjectComponent },
       { path: 'test/:id', 	component:TestComponent },
-      { path: 'home/:id', 	component:HomeComponent },
+      { path: ':id/danhmucmonhoc', 	component:ListsubjectComponent},
+      { path: ':id/doimatkhau', 	component:ChangepasswordComponent},
+
+      
     ]),
     AppRoutingModule
   ],

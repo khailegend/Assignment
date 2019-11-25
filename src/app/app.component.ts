@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component , Input } from '@angular/core';
+import { StudentService} from './student.service';
+import { ActivatedRoute} from '@angular/router'; 
+import { Student } from './models/student';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +11,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Assignment';
+  @Input() students : Student;
+  constructor( private studentService : StudentService,
+               private route: ActivatedRoute,) { }
+  ngOnInit() {
+   
+  }
+
+ 
 }

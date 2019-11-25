@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-3 offset-2" 
             *ngFor="let sj of subjects | paginate: { itemsPerPage: itempage, currentPage: currpage}">
-            <div id="card" class="card" style="width: 300px;" routerLink ="/test/{{sj.id}}">
+            <div id="card" class="card" style="width: 300px;" routerLink="/test/{{sj.id}}">
                 <div class="card-header bg-primary">
                     <h5 class="text-light">{{sj.Name}}</h5>
                 </div>

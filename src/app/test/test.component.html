@@ -1,19 +1,77 @@
-<div *ngIf ="tests" >
+<div *ngIf="tests">
+   
+    <h1 class="text-center text-dark ">{{tests.name}}</h1>
+    <hr><br>
     
-    <h1 style="margin:auto;">{{tests.name}}</h1><hr><br>
-    <div *ngFor =" let t of tests.arr ">
-        <form>
-           
-            <ul class="custom-control custom-radio"><strong>CÂU HỎI:</strong> {{t.Text}}
-                <li *ngFor=" let tt of t.Answers" type="none" style="margin: 0px 0px 0px 50px;">
-                    <input type="radio" class="custom-control-input" id="{{tt.Id}}" name="check{{t.AnswerId}}">    
-                    <label class="custom-control-label" for="{{tt.Id}}">{{tt.Text}}</label>
-                </li>
-            </ul>
-           
+    <button class="btn btn-warning shadow-sm text-light" style="margin: 0px 0px 0px 100px; width: 150px;"  (click)="back();">
+        <strong> Back </strong>
+    </button>
+    <div id="clockdiv" class="clockdiv" style="margin: 0px 0px 0px 180px ;">
+        <div>
+            <span class="minutes">05</span>
+            <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+            <span class="seconds">00</span>
+            <div class="smalltext">Seconds</div>
+        </div>
+    </div>
+    <button type="button" id="starttest" class="btn btn-primary" style="margin: 0px 0px 0px 160px;" onclick="khai();">
+        <strong>Bắt Đầu Làm Bài</strong>
+    </button>
+
+    <br>
+    <hr>
+    <div id="baitest" style="display: none;">
+    <div *ngFor=" let t of tests.arr |  paginate: { itemsPerPage: itempage, currentPage: currpage}">
+        <form id="card" class="card" style="width:80%;  margin:auto">
+            <div class="card-header bg-success text-light" style="height: 60px;"><strong> CÂU HỎI:</strong>{{t.Text}}</div>
+            <table class="table  card-body">
+                <tbody *ngFor=" let tt of t.Answers">
+                    <td id="AS.{{tt.Id}}" >
+                        <div class="custom-control custom-radio" type="none" style="margin: 10px 0px 0px 30px;">
+                            <input (change)="choose(tt.Id);" (click)="saveAS(tt.Id);" type="radio" value="{{tt.Id}}" [(ngModel)]="ID[t.Id]"
+                                class="custom-control-input" id="{{tt.Id}}" name="{{t.Id}}">
+                            <label class="custom-control-label" for="{{tt.Id}}">{{tt.Text}}</label>
+                        </div>
+                    </td>
+                </tbody>
+            </table>
         </form>
     </div>
+
+
+    <div id="btnpage" class="page-item text-center">
+        <pagination-controls (click)="changetest(); " (pageChange)="currpage = $event"></pagination-controls>
+        <div id="buttonfinal">
+            <button id="buttonfinal2" onclick="stop();" class="btn btn-lg btn-primary text-light" (click)="final();"
+                data-toggle="modal" data-target="#myModal"><strong>final</strong></button>
+        </div><br>
+    </div>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-  ">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header bg-primary ">
+                    <h4 class="modal-title text-light">Kết Quả Bài Kiểm Tra</h4>
+
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Số đáp án đúng : {{final() / 2}}<br>
+                    ĐIỂM : {{final()}}<br>
+                    Thời gian làm bài : <a id="timetest"></a>
+                </div>
+                <!-- Modal footer -->
+                <div  class="modal-footer">
+                    <button type="button" (click)="back();" data-dismiss="modal" class="btn btn-danger"
+                        style="margin: 0px 165px 0px 0px;">Thoát bài kiểm tra</button>
+                    <button  type="button" (click)="disfinal();checkanswer();" class="btn btn-success" data-dismiss="modal">Kiểm tra
+                        kết quả</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-    
-

@@ -1,4 +1,7 @@
 export class Test {
+  forEach(arg0: (element: any) => void) {
+    throw new Error("Method not implemented.");
+  }
     id: string ;
     name : string ;
     arr: [
@@ -6,7 +9,8 @@ export class Test {
         Id : string , 
         Text: string ,
         Marks: string,
-        AnswerId: [
+        AnswerId: string, 
+        Answers: [
             {
                  Id : string,
                 Text : string,

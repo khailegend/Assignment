@@ -1,7 +1,7 @@
 {
   "student": [
     {
-      "id": "1",
+      "id": "teonv@fpt.edu.vn",
       "firstname": "Tèo",
       "lastname": "Nguyễn Văn",
       "email": "teonv@fpt.edu.vn",
@@ -9,7 +9,7 @@
       "phone": "0909123456"
     },
     {
-      "id": "2",
+      "id": "pheonv@fpt.edu.vn",
       "firstname": "Phèo",
       "lastname": "Nguyễn Văn",
       "email": "pheonv@fpt.edu.vn",
@@ -17,7 +17,7 @@
       "phone": "0909654321"
     },
     {
-      "id": "3",
+      "id": "nhanchikhai@gmail.com",
       "firstname": "Khải",
       "lastname": "Nhan Chí",
       "email": "nhanchikhai@gmail.com",
@@ -30,7 +30,7 @@
       "email": "kiet@gmail.com",
       "password": "123456789",
       "phone": "0123456789",
-      "id": "AfzklLq"
+      "id": "kiet@gmail.com"
     },
     {
       "firstname": "Tuấn",
@@ -38,15 +38,17 @@
       "email": "tuan@gmail.com",
       "password": "987654321",
       "phone": "090911111",
-      "id": "e8RG21f"
+      "id": "tuan@gmail.com"
+    },
+    {
+      "id": "mua11111@gmail.com",
+      "firstname": "MUA",
+      "lastname": "TRẦN",
+      "email": "mua11111@gmail.com",
+      "password": "123456789",
+      "phone": "123456789"
     }
   ],
-
-
-
-
-
-
   "subject": [
     {
       "id": "ADAV",
@@ -149,15 +151,11 @@
       "Logo": "WEBU.jpg"
     }
   ],
-
-
-
-  
-  "test" : [
+  "test": [
     {
-      "id": "ADAV", 
+      "id": "ADAV",
       "name": "LẬP TRÌNH ANDROID NÂNG CAO",
-      "arr" : [
+      "arr": [
         {
           "Id": 25106,
           "Text": "Có mấy loại Service?",
@@ -206,97 +204,1537 @@
             }
           ]
         },
-        { "Id": 25108, "Text": "Khi nào phương thức ServiceConnection.onServiceConnected được gọi?", "Marks": 1, "AnswerId": 104126, "Answers": [{ "Id": 104126, "Text": "Sau khi một thành phần gọi Context.startService()" }, { "Id": 104127, "Text": "Sau khi một thành phần gọi Context.bindService()" }, { "Id": 104128, "Text": "Sau khi BroadcastReceiver nhận một Intent được gửi bởi Service" }, { "Id": 104129, "Text": "Khi một Service gọi Context.startActivity()" }] }, { "Id": 25109, "Text": "Phương thức Service.stopSelf(int startId) có tham số kiểu int. Tham số này dùng để làm gì?", "Marks": 1, "AnswerId": 104132, "Answers": [{ "Id": 104130, "Text": "Nếu startId khác 0, Service sẽ bị hủy một cách vô điều kiện" }, { "Id": 104131, "Text": "Tham số miêu tả số miliseconds bị trì hoãn trước khi Service bị hủy" }, { "Id": 104132, "Text": "Là start identifier gần nhất nhận được bởi lời gọi onStart(Intent, int)" }, { "Id": 104133, "Text": "Được sử dụng để dừng Service nếu Service đang chạy trong process id với process id bằng giá trị startid" }] }, { "Id": 25110, "Text": "Câu nào là đúng khi đề cập đến Service?", "Marks": 1, "AnswerId": 104137, "Answers": [{ "Id": 104134, "Text": "Các ứng dụng khác nhau không thể truy cập đến các Service của chính nó" }, { "Id": 104135, "Text": "Tất cả phương án đều đúng" }, { "Id": 104136, "Text": "Lớp Service luôn luôn được truy cập bởi tất cả ứng dụng Android khác cài trên thiết bị" }, { "Id": 104137, "Text": "Service có thể chạy nền vô hạn kể cả khi thành phần khởi tạo Service đã bị hủy" }] }
+        {
+          "Id": 25108,
+          "Text": "Khi nào phương thức ServiceConnection.onServiceConnected được gọi?",
+          "Marks": 1,
+          "AnswerId": 104126,
+          "Answers": [
+            {
+              "Id": 104126,
+              "Text": "Sau khi một thành phần gọi Context.startService()"
+            },
+            {
+              "Id": 104127,
+              "Text": "Sau khi một thành phần gọi Context.bindService()"
+            },
+            {
+              "Id": 104128,
+              "Text": "Sau khi BroadcastReceiver nhận một Intent được gửi bởi Service"
+            },
+            {
+              "Id": 104129,
+              "Text": "Khi một Service gọi Context.startActivity()"
+            }
+          ]
+        },
+        {
+          "Id": 25109,
+          "Text": "Phương thức Service.stopSelf(int startId) có tham số kiểu int. Tham số này dùng để làm gì?",
+          "Marks": 1,
+          "AnswerId": 104132,
+          "Answers": [
+            {
+              "Id": 104130,
+              "Text": "Nếu startId khác 0, Service sẽ bị hủy một cách vô điều kiện"
+            },
+            {
+              "Id": 104131,
+              "Text": "Tham số miêu tả số miliseconds bị trì hoãn trước khi Service bị hủy"
+            },
+            {
+              "Id": 104132,
+              "Text": "Là start identifier gần nhất nhận được bởi lời gọi onStart(Intent, int)"
+            },
+            {
+              "Id": 104133,
+              "Text": "Được sử dụng để dừng Service nếu Service đang chạy trong process id với process id bằng giá trị startid"
+            }
+          ]
+        },
+        {
+          "Id": 25110,
+          "Text": "Câu nào là đúng khi đề cập đến Service?",
+          "Marks": 1,
+          "AnswerId": 104137,
+          "Answers": [
+            {
+              "Id": 104134,
+              "Text": "Các ứng dụng khác nhau không thể truy cập đến các Service của chính nó"
+            },
+            {
+              "Id": 104135,
+              "Text": "Tất cả phương án đều đúng"
+            },
+            {
+              "Id": 104136,
+              "Text": "Lớp Service luôn luôn được truy cập bởi tất cả ứng dụng Android khác cài trên thiết bị"
+            },
+            {
+              "Id": 104137,
+              "Text": "Service có thể chạy nền vô hạn kể cả khi thành phần khởi tạo Service đã bị hủy"
+            }
+          ]
+        }
       ]
     },
-
     {
-      "id": "ADBS", 
+      "id": "ADBS",
       "name": "LẬP TRÌNH ANDROID CƠ BẢN",
-      "arr" : [
-        {"Id":25026,"Text":"Điều khiển được sử dụng để hiển thị nội dụng trang web trong ứng dụng Android?","Marks":1,"AnswerId":103784,"Answers":[{"Id":103783,"Text":"Button"},{"Id":103784,"Text":"WebView"},{"Id":103785,"Text":"Spinner"},{"Id":103786,"Text":"EditText"}]},{"Id":25027,"Text":"Đối với URLConnection, sử dụng phương thức nào để thiết lập timeout cho connection?","Marks":1,"AnswerId":103790,"Answers":[{"Id":103787,"Text":"setURLTimeout()"},{"Id":103788,"Text":"setInternetTimeout()"},{"Id":103789,"Text":"setTimeout()"},{"Id":103790,"Text":"setConnectTimeout()"}]},{"Id":25028,"Text":"Cho đoạn mã lệnh sau:wv.setWebChromeClient(new WebChromeClient() { @Override public void onReceivedTitle(WebView view, String title) { getWindow().setTitle(title); } });Hãy cho biết đoạn lệnh trên dùng để làm gì?","Marks":1,"AnswerId":103791,"Answers":[{"Id":103791,"Text":"Thay đổi title của trang web"},{"Id":103792,"Text":"Đóng trang web"},{"Id":103793,"Text":"Thay đổi nội dung của trang web"},{"Id":103794,"Text":"Lấy thông tin title của trang web"}]},{"Id":25029,"Text":"Sử dụng lớp nào để truy cập và thay đổi thông tin trên trình duyệt mặc định của hệ điều hành Android?","Marks":1,"AnswerId":103798,"Answers":[{"Id":103795,"Text":"WebClient"},{"Id":103796,"Text":"WebSafariClient"},{"Id":103797,"Text":"WebFirefoxClient"},{"Id":103798,"Text":"WebViewClient"}]},{"Id":25030,"Text":"Câu nào là sai đối với WebView?","Marks":1,"AnswerId":103800,"Answers":[{"Id":103799,"Text":"Không có widget cho brownser activity"},{"Id":103800,"Text":"Không thể sử dụng tag trong XML layout"},{"Id":103801,"Text":"Click vào link sẽ gọi trình duyệt"},{"Id":103802,"Text":"Có thể sử dụng tag trong XML layout"}]}
+      "arr": [
+        {
+          "Id": 25026,
+          "Text": "Điều khiển được sử dụng để hiển thị nội dụng trang web trong ứng dụng Android?",
+          "Marks": 1,
+          "AnswerId": 103784,
+          "Answers": [
+            {
+              "Id": 103783,
+              "Text": "Button"
+            },
+            {
+              "Id": 103784,
+              "Text": "WebView"
+            },
+            {
+              "Id": 103785,
+              "Text": "Spinner"
+            },
+            {
+              "Id": 103786,
+              "Text": "EditText"
+            }
+          ]
+        },
+        {
+          "Id": 25027,
+          "Text": "Đối với URLConnection, sử dụng phương thức nào để thiết lập timeout cho connection?",
+          "Marks": 1,
+          "AnswerId": 103790,
+          "Answers": [
+            {
+              "Id": 103787,
+              "Text": "setURLTimeout()"
+            },
+            {
+              "Id": 103788,
+              "Text": "setInternetTimeout()"
+            },
+            {
+              "Id": 103789,
+              "Text": "setTimeout()"
+            },
+            {
+              "Id": 103790,
+              "Text": "setConnectTimeout()"
+            }
+          ]
+        },
+        {
+          "Id": 25028,
+          "Text": "Cho đoạn mã lệnh sau:wv.setWebChromeClient(new WebChromeClient() { @Override public void onReceivedTitle(WebView view, String title) { getWindow().setTitle(title); } });Hãy cho biết đoạn lệnh trên dùng để làm gì?",
+          "Marks": 1,
+          "AnswerId": 103791,
+          "Answers": [
+            {
+              "Id": 103791,
+              "Text": "Thay đổi title của trang web"
+            },
+            {
+              "Id": 103792,
+              "Text": "Đóng trang web"
+            },
+            {
+              "Id": 103793,
+              "Text": "Thay đổi nội dung của trang web"
+            },
+            {
+              "Id": 103794,
+              "Text": "Lấy thông tin title của trang web"
+            }
+          ]
+        },
+        {
+          "Id": 25029,
+          "Text": "Sử dụng lớp nào để truy cập và thay đổi thông tin trên trình duyệt mặc định của hệ điều hành Android?",
+          "Marks": 1,
+          "AnswerId": 103798,
+          "Answers": [
+            {
+              "Id": 103795,
+              "Text": "WebClient"
+            },
+            {
+              "Id": 103796,
+              "Text": "WebSafariClient"
+            },
+            {
+              "Id": 103797,
+              "Text": "WebFirefoxClient"
+            },
+            {
+              "Id": 103798,
+              "Text": "WebViewClient"
+            }
+          ]
+        },
+        {
+          "Id": 25030,
+          "Text": "Câu nào là sai đối với WebView?",
+          "Marks": 1,
+          "AnswerId": 103800,
+          "Answers": [
+            {
+              "Id": 103799,
+              "Text": "Không có widget cho brownser activity"
+            },
+            {
+              "Id": 103800,
+              "Text": "Không thể sử dụng tag trong XML layout"
+            },
+            {
+              "Id": 103801,
+              "Text": "Click vào link sẽ gọi trình duyệt"
+            },
+            {
+              "Id": 103802,
+              "Text": "Có thể sử dụng tag trong XML layout"
+            }
+          ]
+        }
       ]
     },
-
     {
       "id": "ADTE",
       "name": "KIỂM THỬ VÀ TRIỂN KHAI ỨNG DỤNG ANDROID",
       "arr": [
-        {"Id":25263,"Text":"Kiểm thử nào được sử dụng để kiểm thử hoạt động của các thành phần khi chúng làm việc chung với nhau?","Marks":1,"AnswerId":104717,"Answers":[{"Id":104716,"Text":"Kiểm thử đơn vị"},{"Id":104717,"Text":"Kiểm thử tích hợp"},{"Id":104718,"Text":"Kiểm thử chấp nhận"},{"Id":104719,"Text":"Kiểm thử giao diện"}]},{"Id":25264,"Text":"Android sử dụng Framework nào để kiểm thử đơn vị?","Marks":1,"AnswerId":104720,"Answers":[{"Id":104720,"Text":"JUnit"},{"Id":104721,"Text":"FUnit"},{"Id":104722,"Text":"NUnit"},{"Id":104723,"Text":"AUnit"}]},{"Id":25265,"Text":"Trong JUnit, phương thức nào được sử dụng để kiểm tra một giá trị có phải Null hay không?","Marks":1,"AnswerId":104727,"Answers":[{"Id":104724,"Text":"confirmNull"},{"Id":104725,"Text":"assertNulls"},{"Id":104726,"Text":"confirmNulls"},{"Id":104727,"Text":"assertNull"}]},{"Id":25266,"Text":"Trong JUnit test case, phương thức nào được sử dụng để tạo đối tượng và khởi tạo giá trị cho các đối tượng?","Marks":1,"AnswerId":104729,"Answers":[{"Id":104728,"Text":"tearingDown()"},{"Id":104729,"Text":"setUp()"},{"Id":104730,"Text":"settingUp()"},{"Id":104731,"Text":"tearDown()"}]},{"Id":25267,"Text":"Kiểm tra việc lưu thông tin trạng thái của Activity trong phương thức nào?","Marks":1,"AnswerId":104733,"Answers":[{"Id":104732,"Text":"onSearchRequested"},{"Id":104733,"Text":"onPause"},{"Id":104734,"Text":"onKeyUp"},{"Id":104735,"Text":"onNavigateUp"}]}
+        {
+          "Id": 25263,
+          "Text": "Kiểm thử nào được sử dụng để kiểm thử hoạt động của các thành phần khi chúng làm việc chung với nhau?",
+          "Marks": 1,
+          "AnswerId": 104717,
+          "Answers": [
+            {
+              "Id": 104716,
+              "Text": "Kiểm thử đơn vị"
+            },
+            {
+              "Id": 104717,
+              "Text": "Kiểm thử tích hợp"
+            },
+            {
+              "Id": 104718,
+              "Text": "Kiểm thử chấp nhận"
+            },
+            {
+              "Id": 104719,
+              "Text": "Kiểm thử giao diện"
+            }
+          ]
+        },
+        {
+          "Id": 25264,
+          "Text": "Android sử dụng Framework nào để kiểm thử đơn vị?",
+          "Marks": 1,
+          "AnswerId": 104720,
+          "Answers": [
+            {
+              "Id": 104720,
+              "Text": "JUnit"
+            },
+            {
+              "Id": 104721,
+              "Text": "FUnit"
+            },
+            {
+              "Id": 104722,
+              "Text": "NUnit"
+            },
+            {
+              "Id": 104723,
+              "Text": "AUnit"
+            }
+          ]
+        },
+        {
+          "Id": 25265,
+          "Text": "Trong JUnit, phương thức nào được sử dụng để kiểm tra một giá trị có phải Null hay không?",
+          "Marks": 1,
+          "AnswerId": 104727,
+          "Answers": [
+            {
+              "Id": 104724,
+              "Text": "confirmNull"
+            },
+            {
+              "Id": 104725,
+              "Text": "assertNulls"
+            },
+            {
+              "Id": 104726,
+              "Text": "confirmNulls"
+            },
+            {
+              "Id": 104727,
+              "Text": "assertNull"
+            }
+          ]
+        },
+        {
+          "Id": 25266,
+          "Text": "Trong JUnit test case, phương thức nào được sử dụng để tạo đối tượng và khởi tạo giá trị cho các đối tượng?",
+          "Marks": 1,
+          "AnswerId": 104729,
+          "Answers": [
+            {
+              "Id": 104728,
+              "Text": "tearingDown()"
+            },
+            {
+              "Id": 104729,
+              "Text": "setUp()"
+            },
+            {
+              "Id": 104730,
+              "Text": "settingUp()"
+            },
+            {
+              "Id": 104731,
+              "Text": "tearDown()"
+            }
+          ]
+        },
+        {
+          "Id": 25267,
+          "Text": "Kiểm tra việc lưu thông tin trạng thái của Activity trong phương thức nào?",
+          "Marks": 1,
+          "AnswerId": 104733,
+          "Answers": [
+            {
+              "Id": 104732,
+              "Text": "onSearchRequested"
+            },
+            {
+              "Id": 104733,
+              "Text": "onPause"
+            },
+            {
+              "Id": 104734,
+              "Text": "onKeyUp"
+            },
+            {
+              "Id": 104735,
+              "Text": "onNavigateUp"
+            }
+          ]
+        }
       ]
     },
-  
     {
       "id": "ADUI",
       "name": "THIẾT KẾ GIAO DIỆN TRÊN ANDROID",
       "arr": [
-        {"Id":25184,"Text":"Câu nào sau đây đúng khi nói về Frame layout?","Marks":1,"AnswerId":104412,"Answers":[{"Id":104412,"Text":"Frame layout là loại layout luôn lấy tọa độ gốc là top- left và nó xếp chồng view sau lên view trước"},{"Id":104413,"Text":"Frame layout sắp xếp các view ở chính xác tọa độ mong muốn thông qua các thuộc tính layout_x và layout_y"},{"Id":104414,"Text":"Frame layout sắp xếp các view theo hàng ngang hoặc hàng dọc, trong một cột hoặc một dòng"},{"Id":104415,"Text":"Frame layout sắp xếp các view thành các cột và dòng. Mỗi view trong 1 tableRow sẽ là 1 cột"}]},{"Id":25185,"Text":"Trong android, interface được tạo từ các điều khiển gì?","Marks":1,"AnswerId":104416,"Answers":[{"Id":104416,"Text":"View và View group"},{"Id":104417,"Text":"View"},{"Id":104418,"Text":"Button"},{"Id":104419,"Text":"View group"}]},{"Id":25186,"Text":"Điều khiển nào sau đây không phải là một layout?","Marks":1,"AnswerId":104420,"Answers":[{"Id":104420,"Text":"LeftAlignLayout"},{"Id":104421,"Text":"RelativeLayout"},{"Id":104422,"Text":"AbsoluteLayout"},{"Id":104423,"Text":"RelativeLayout"}]},{"Id":25187,"Text":"Các điều khiển nào sau đây hiển thị trên Navigation Bar?","Marks":1,"AnswerId":104425,"Answers":[{"Id":104424,"Text":"Recent"},{"Id":104425,"Text":"Tất cả các phương án đều đúng"},{"Id":104426,"Text":"Home"},{"Id":104427,"Text":"Back"}]},{"Id":25188,"Text":"Loại layout nào sau đây luôn dùng để gắn các control ở góc bên trái trên cùng màn hình và không cho phép thay đổi vị trí của các control?","Marks":1,"AnswerId":104428,"Answers":[{"Id":104428,"Text":"Frame layout"},{"Id":104429,"Text":"Table layout"},{"Id":104430,"Text":"Relative layout"},{"Id":104431,"Text":"Linear layout"}]}
+        {
+          "Id": 25184,
+          "Text": "Câu nào sau đây đúng khi nói về Frame layout?",
+          "Marks": 1,
+          "AnswerId": 104412,
+          "Answers": [
+            {
+              "Id": 104412,
+              "Text": "Frame layout là loại layout luôn lấy tọa độ gốc là top- left và nó xếp chồng view sau lên view trước"
+            },
+            {
+              "Id": 104413,
+              "Text": "Frame layout sắp xếp các view ở chính xác tọa độ mong muốn thông qua các thuộc tính layout_x và layout_y"
+            },
+            {
+              "Id": 104414,
+              "Text": "Frame layout sắp xếp các view theo hàng ngang hoặc hàng dọc, trong một cột hoặc một dòng"
+            },
+            {
+              "Id": 104415,
+              "Text": "Frame layout sắp xếp các view thành các cột và dòng. Mỗi view trong 1 tableRow sẽ là 1 cột"
+            }
+          ]
+        },
+        {
+          "Id": 25185,
+          "Text": "Trong android, interface được tạo từ các điều khiển gì?",
+          "Marks": 1,
+          "AnswerId": 104416,
+          "Answers": [
+            {
+              "Id": 104416,
+              "Text": "View và View group"
+            },
+            {
+              "Id": 104417,
+              "Text": "View"
+            },
+            {
+              "Id": 104418,
+              "Text": "Button"
+            },
+            {
+              "Id": 104419,
+              "Text": "View group"
+            }
+          ]
+        },
+        {
+          "Id": 25186,
+          "Text": "Điều khiển nào sau đây không phải là một layout?",
+          "Marks": 1,
+          "AnswerId": 104420,
+          "Answers": [
+            {
+              "Id": 104420,
+              "Text": "LeftAlignLayout"
+            },
+            {
+              "Id": 104421,
+              "Text": "RelativeLayout"
+            },
+            {
+              "Id": 104422,
+              "Text": "AbsoluteLayout"
+            },
+            {
+              "Id": 104423,
+              "Text": "RelativeLayout"
+            }
+          ]
+        },
+        {
+          "Id": 25187,
+          "Text": "Các điều khiển nào sau đây hiển thị trên Navigation Bar?",
+          "Marks": 1,
+          "AnswerId": 104425,
+          "Answers": [
+            {
+              "Id": 104424,
+              "Text": "Recent"
+            },
+            {
+              "Id": 104425,
+              "Text": "Tất cả các phương án đều đúng"
+            },
+            {
+              "Id": 104426,
+              "Text": "Home"
+            },
+            {
+              "Id": 104427,
+              "Text": "Back"
+            }
+          ]
+        },
+        {
+          "Id": 25188,
+          "Text": "Loại layout nào sau đây luôn dùng để gắn các control ở góc bên trái trên cùng màn hình và không cho phép thay đổi vị trí của các control?",
+          "Marks": 1,
+          "AnswerId": 104428,
+          "Answers": [
+            {
+              "Id": 104428,
+              "Text": "Frame layout"
+            },
+            {
+              "Id": 104429,
+              "Text": "Table layout"
+            },
+            {
+              "Id": 104430,
+              "Text": "Relative layout"
+            },
+            {
+              "Id": 104431,
+              "Text": "Linear layout"
+            }
+          ]
+        }
       ]
     },
-
     {
       "id": "ASNE",
       "name": "Lập trình ASP.NET",
       "arr": [
-        {"Id":25970,"Text":"Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang","Marks":1,"AnswerId":107573,"Answers":[{"Id":107571,"Text":"Prerender"},{"Id":107572,"Text":"Init"},{"Id":107573,"Text":"Load"},{"Id":107574,"Text":"Unload"}]},{"Id":25971,"Text":"Bạn hãy cho biết định nghĩa nào sau đây là nói về ứng dụng web?","Marks":1,"AnswerId":107575,"Answers":[{"Id":107575,"Text":"Là một ứng dụng client/server được truy cập thông qua trình duyệt Web trên mạng Internet hoặc intranet"},{"Id":107576,"Text":"Các phương án đều đúng"},{"Id":107577,"Text":"Là ứng dụng chỉ chạy trên một máy tính đơn"},{"Id":107578,"Text":"Là ứng dụng chỉ chạy trên môi trường mobile"}]},{"Id":25972,"Text":"Để hiển thị dòng \"Hello World\" trên trang web, trong ASP.Net cần dùng lệnh nào?","Marks":1,"AnswerId":107582,"Answers":[{"Id":107579,"Text":"Document.Write(\"Hello World\");"},{"Id":107580,"Text":"\"Hello World\""},{"Id":107581,"Text":"Request.Write((\"Hello World\");"},{"Id":107582,"Text":"Response.Write(\"Hello World\");"}]},{"Id":25973,"Text":"Phát biểu nào sau đây đúng về ASP.NET?","Marks":1,"AnswerId":107584,"Answers":[{"Id":107583,"Text":"ASP.NET là mô hình lập trình hướng cấu trúc"},{"Id":107584,"Text":"ASP.NET là mô hình lập trình hướng sự kiện"},{"Id":107585,"Text":"ASP.NET là mô hình lập trình hướng thành phần"},{"Id":107586,"Text":"ASP.NET là mô hình lập trình hướng đối tượng"}]},{"Id":25974,"Text":"Khi chạy một ứng dụng ASP.NET, nếu ngoại lệ xảy ra nhưng không được bắt và xử lý, ứng dụng sẽ chuyển sang chế độ ngắt và hộp thoại ............ sẽ hiển thị.","Marks":1,"AnswerId":107587,"Answers":[{"Id":107587,"Text":"Exception Assistant"},{"Id":107588,"Text":"Exception Help"},{"Id":107589,"Text":"Các phương án đều sai"},{"Id":107590,"Text":"Exception"}]}
+        {
+          "Id": 25970,
+          "Text": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+          "Marks": 1,
+          "AnswerId": 107573,
+          "Answers": [
+            {
+              "Id": 107571,
+              "Text": "Prerender"
+            },
+            {
+              "Id": 107572,
+              "Text": "Init"
+            },
+            {
+              "Id": 107573,
+              "Text": "Load"
+            },
+            {
+              "Id": 107574,
+              "Text": "Unload"
+            }
+          ]
+        },
+        {
+          "Id": 25971,
+          "Text": "Bạn hãy cho biết định nghĩa nào sau đây là nói về ứng dụng web?",
+          "Marks": 1,
+          "AnswerId": 107575,
+          "Answers": [
+            {
+              "Id": 107575,
+              "Text": "Là một ứng dụng client/server được truy cập thông qua trình duyệt Web trên mạng Internet hoặc intranet"
+            },
+            {
+              "Id": 107576,
+              "Text": "Các phương án đều đúng"
+            },
+            {
+              "Id": 107577,
+              "Text": "Là ứng dụng chỉ chạy trên một máy tính đơn"
+            },
+            {
+              "Id": 107578,
+              "Text": "Là ứng dụng chỉ chạy trên môi trường mobile"
+            }
+          ]
+        },
+        {
+          "Id": 25972,
+          "Text": "Để hiển thị dòng \"Hello World\" trên trang web, trong ASP.Net cần dùng lệnh nào?",
+          "Marks": 1,
+          "AnswerId": 107582,
+          "Answers": [
+            {
+              "Id": 107579,
+              "Text": "Document.Write(\"Hello World\");"
+            },
+            {
+              "Id": 107580,
+              "Text": "\"Hello World\""
+            },
+            {
+              "Id": 107581,
+              "Text": "Request.Write((\"Hello World\");"
+            },
+            {
+              "Id": 107582,
+              "Text": "Response.Write(\"Hello World\");"
+            }
+          ]
+        },
+        {
+          "Id": 25973,
+          "Text": "Phát biểu nào sau đây đúng về ASP.NET?",
+          "Marks": 1,
+          "AnswerId": 107584,
+          "Answers": [
+            {
+              "Id": 107583,
+              "Text": "ASP.NET là mô hình lập trình hướng cấu trúc"
+            },
+            {
+              "Id": 107584,
+              "Text": "ASP.NET là mô hình lập trình hướng sự kiện"
+            },
+            {
+              "Id": 107585,
+              "Text": "ASP.NET là mô hình lập trình hướng thành phần"
+            },
+            {
+              "Id": 107586,
+              "Text": "ASP.NET là mô hình lập trình hướng đối tượng"
+            }
+          ]
+        },
+        {
+          "Id": 25974,
+          "Text": "Khi chạy một ứng dụng ASP.NET, nếu ngoại lệ xảy ra nhưng không được bắt và xử lý, ứng dụng sẽ chuyển sang chế độ ngắt và hộp thoại ............ sẽ hiển thị.",
+          "Marks": 1,
+          "AnswerId": 107587,
+          "Answers": [
+            {
+              "Id": 107587,
+              "Text": "Exception Assistant"
+            },
+            {
+              "Id": 107588,
+              "Text": "Exception Help"
+            },
+            {
+              "Id": 107589,
+              "Text": "Các phương án đều sai"
+            },
+            {
+              "Id": 107590,
+              "Text": "Exception"
+            }
+          ]
+        }
       ]
     },
-
     {
       "id": "CLCO",
       "name": "Điện toán đám mây",
       "arr": [
-        {"Id":24661,"Text":"Dịch vụ Amazon Elastic Compute Cloud có chức năng chính là gì?","Marks":1,"AnswerId":102331,"Answers":[{"Id":102331,"Text":"Hỗ trợ lưu trữ web"},{"Id":102332,"Text":"Hỗ trợ cập nhật dữ liệu"},{"Id":102333,"Text":"Hỗ trợ thay đổi kiến trúc mô hình cloud"},{"Id":102334,"Text":"Hỗ trợ truy xuất dữ liệu"}]},{"Id":24662,"Text":"Câu nào là đúng đối với UDDI?","Marks":1,"AnswerId":102337,"Answers":[{"Id":102335,"Text":"UDDI là cách viết khác của WSDL"},{"Id":102336,"Text":"UDDI tương tự như WSDL"},{"Id":102337,"Text":"UDDI cho phép ghi thông tin về doanh nghiệp và chi tiết sử dụng dịch vụ web."},{"Id":102338,"Text":"UDDI không cho phép ghi thông tin về doanh nghiệp và chi tiết sử dụng dịch vụ web, nó chỉ được thực hiện qua WSDL"}]},{"Id":24663,"Text":"Câu nào là đúng đối với WSDL?","Marks":1,"AnswerId":102339,"Answers":[{"Id":102339,"Text":"WSDL Cho phép các nhà phát triển ghi thông tin dịch vụ web"},{"Id":102340,"Text":"WSDL kết nối trực tiếp với cơ sở dữ liệu SQLite và trả về kết quả cho người dùng"},{"Id":102341,"Text":"WSDL là cầu nối giữa người sử dụng với Database"},{"Id":102342,"Text":"WSDL không cho phép các nhà phát triển ghi thông tin dịch vụ web"}]},{"Id":24664,"Text":"WSDL là viết tắt của cụm từ nào?","Marks":1,"AnswerId":102345,"Answers":[{"Id":102343,"Text":"Width Server Description Language"},{"Id":102344,"Text":"Width Services Description Language"},{"Id":102345,"Text":"Web Services Description Language"},{"Id":102346,"Text":"Web Server Description Language"}]},{"Id":24665,"Text":"API là viết tắt của cụm từ nào?","Marks":1,"AnswerId":102349,"Answers":[{"Id":102347,"Text":"Application Private Interface"},{"Id":102348,"Text":"Application Programming Internet"},{"Id":102349,"Text":"Application Programming Interface"},{"Id":102350,"Text":"Application Public Interface"}]}
+        {
+          "Id": 24661,
+          "Text": "Dịch vụ Amazon Elastic Compute Cloud có chức năng chính là gì?",
+          "Marks": 1,
+          "AnswerId": 102331,
+          "Answers": [
+            {
+              "Id": 102331,
+              "Text": "Hỗ trợ lưu trữ web"
+            },
+            {
+              "Id": 102332,
+              "Text": "Hỗ trợ cập nhật dữ liệu"
+            },
+            {
+              "Id": 102333,
+              "Text": "Hỗ trợ thay đổi kiến trúc mô hình cloud"
+            },
+            {
+              "Id": 102334,
+              "Text": "Hỗ trợ truy xuất dữ liệu"
+            }
+          ]
+        },
+        {
+          "Id": 24662,
+          "Text": "Câu nào là đúng đối với UDDI?",
+          "Marks": 1,
+          "AnswerId": 102337,
+          "Answers": [
+            {
+              "Id": 102335,
+              "Text": "UDDI là cách viết khác của WSDL"
+            },
+            {
+              "Id": 102336,
+              "Text": "UDDI tương tự như WSDL"
+            },
+            {
+              "Id": 102337,
+              "Text": "UDDI cho phép ghi thông tin về doanh nghiệp và chi tiết sử dụng dịch vụ web."
+            },
+            {
+              "Id": 102338,
+              "Text": "UDDI không cho phép ghi thông tin về doanh nghiệp và chi tiết sử dụng dịch vụ web, nó chỉ được thực hiện qua WSDL"
+            }
+          ]
+        },
+        {
+          "Id": 24663,
+          "Text": "Câu nào là đúng đối với WSDL?",
+          "Marks": 1,
+          "AnswerId": 102339,
+          "Answers": [
+            {
+              "Id": 102339,
+              "Text": "WSDL Cho phép các nhà phát triển ghi thông tin dịch vụ web"
+            },
+            {
+              "Id": 102340,
+              "Text": "WSDL kết nối trực tiếp với cơ sở dữ liệu SQLite và trả về kết quả cho người dùng"
+            },
+            {
+              "Id": 102341,
+              "Text": "WSDL là cầu nối giữa người sử dụng với Database"
+            },
+            {
+              "Id": 102342,
+              "Text": "WSDL không cho phép các nhà phát triển ghi thông tin dịch vụ web"
+            }
+          ]
+        },
+        {
+          "Id": 24664,
+          "Text": "WSDL là viết tắt của cụm từ nào?",
+          "Marks": 1,
+          "AnswerId": 102345,
+          "Answers": [
+            {
+              "Id": 102343,
+              "Text": "Width Server Description Language"
+            },
+            {
+              "Id": 102344,
+              "Text": "Width Services Description Language"
+            },
+            {
+              "Id": 102345,
+              "Text": "Web Services Description Language"
+            },
+            {
+              "Id": 102346,
+              "Text": "Web Server Description Language"
+            }
+          ]
+        },
+        {
+          "Id": 24665,
+          "Text": "API là viết tắt của cụm từ nào?",
+          "Marks": 1,
+          "AnswerId": 102349,
+          "Answers": [
+            {
+              "Id": 102347,
+              "Text": "Application Private Interface"
+            },
+            {
+              "Id": 102348,
+              "Text": "Application Programming Internet"
+            },
+            {
+              "Id": 102349,
+              "Text": "Application Programming Interface"
+            },
+            {
+              "Id": 102350,
+              "Text": "Application Public Interface"
+            }
+          ]
+        }
       ]
     },
-
     {
       "id": "DBAV",
       "name": "SQL Server",
       "arr": [
-        {"Id":24956,"Text":"Chọn phát biểu đúng về SQL Server A. Là hệ quản trị nội dung cho phép đồng thời một lúc có nhiều người dùng truy xuất đến dữ liệu. B. SQL Server sử dụng điển hình trong các hệ thống nhỏ đến trung bình chạy trên một hoặc nhiều máy chủ Windows C. Là hệ quản","Marks":1,"AnswerId":103506,"Answers":[{"Id":103503,"Text":"B,D Đúng"},{"Id":103504,"Text":"D Đúng"},{"Id":103505,"Text":"A,B Đúng"},{"Id":103506,"Text":"C, B Đúng"}]},{"Id":24957,"Text":"SQL sử dụng ngôn ngữ nào sau đây để truy vấn CSDL: A. SQL B. PL-SQL C. Transact-SQL","Marks":1,"AnswerId":103508,"Answers":[{"Id":103507,"Text":"B Đúng"},{"Id":103508,"Text":"C Đúng"},{"Id":103509,"Text":"Cả A, B, C đều sai"},{"Id":103510,"Text":"A Đúng"}]},{"Id":24958,"Text":"Câu lệnh nào sau đây là câu lệnh điều khiển dữ liệu (DCL) A DENY B CREATE C GRANT D REVOKE","Marks":1,"AnswerId":103511,"Answers":[{"Id":103511,"Text":"A, C, D đúng"},{"Id":103512,"Text":"B, C , D đúng"},{"Id":103513,"Text":"A, B , Dđúng"},{"Id":103514,"Text":"A, B, C đúng"}]},{"Id":24959,"Text":"Để khởi động và dừng SQL Server sử dụng công cụ nào dưới đây:","Marks":1,"AnswerId":103518,"Answers":[{"Id":103515,"Text":"SQL Server Start/Stop Manager"},{"Id":103516,"Text":"SQL Server Configuration Management"},{"Id":103517,"Text":"SQL Server Management Studio"},{"Id":103518,"Text":"SQL Server Configuration Manager"}]},{"Id":24960,"Text":"Các ứng dụng nào sau đây có thể truy cập tới hệ quản trị CSDL SQL Server","Marks":1,"AnswerId":103520,"Answers":[{"Id":103519,"Text":"Ứng dụng .NET"},{"Id":103520,"Text":"Tất cả đáp án đều đúng"},{"Id":103521,"Text":"Ứng dụng Java"},{"Id":103522,"Text":"Ứng dụng Visual Basic 6"}]}
+        {
+          "Id": 24956,
+          "Text": "Chọn phát biểu đúng về SQL Server A. Là hệ quản trị nội dung cho phép đồng thời một lúc có nhiều người dùng truy xuất đến dữ liệu. B. SQL Server sử dụng điển hình trong các hệ thống nhỏ đến trung bình chạy trên một hoặc nhiều máy chủ Windows C. Là hệ quản",
+          "Marks": 1,
+          "AnswerId": 103506,
+          "Answers": [
+            {
+              "Id": 103503,
+              "Text": "B,D Đúng"
+            },
+            {
+              "Id": 103504,
+              "Text": "D Đúng"
+            },
+            {
+              "Id": 103505,
+              "Text": "A,B Đúng"
+            },
+            {
+              "Id": 103506,
+              "Text": "C, B Đúng"
+            }
+          ]
+        },
+        {
+          "Id": 24957,
+          "Text": "SQL sử dụng ngôn ngữ nào sau đây để truy vấn CSDL: A. SQL B. PL-SQL C. Transact-SQL",
+          "Marks": 1,
+          "AnswerId": 103508,
+          "Answers": [
+            {
+              "Id": 103507,
+              "Text": "B Đúng"
+            },
+            {
+              "Id": 103508,
+              "Text": "C Đúng"
+            },
+            {
+              "Id": 103509,
+              "Text": "Cả A, B, C đều sai"
+            },
+            {
+              "Id": 103510,
+              "Text": "A Đúng"
+            }
+          ]
+        },
+        {
+          "Id": 24958,
+          "Text": "Câu lệnh nào sau đây là câu lệnh điều khiển dữ liệu (DCL) A DENY B CREATE C GRANT D REVOKE",
+          "Marks": 1,
+          "AnswerId": 103511,
+          "Answers": [
+            {
+              "Id": 103511,
+              "Text": "A, C, D đúng"
+            },
+            {
+              "Id": 103512,
+              "Text": "B, C , D đúng"
+            },
+            {
+              "Id": 103513,
+              "Text": "A, B , Dđúng"
+            },
+            {
+              "Id": 103514,
+              "Text": "A, B, C đúng"
+            }
+          ]
+        },
+        {
+          "Id": 24959,
+          "Text": "Để khởi động và dừng SQL Server sử dụng công cụ nào dưới đây:",
+          "Marks": 1,
+          "AnswerId": 103518,
+          "Answers": [
+            {
+              "Id": 103515,
+              "Text": "SQL Server Start/Stop Manager"
+            },
+            {
+              "Id": 103516,
+              "Text": "SQL Server Configuration Management"
+            },
+            {
+              "Id": 103517,
+              "Text": "SQL Server Management Studio"
+            },
+            {
+              "Id": 103518,
+              "Text": "SQL Server Configuration Manager"
+            }
+          ]
+        },
+        {
+          "Id": 24960,
+          "Text": "Các ứng dụng nào sau đây có thể truy cập tới hệ quản trị CSDL SQL Server",
+          "Marks": 1,
+          "AnswerId": 103520,
+          "Answers": [
+            {
+              "Id": 103519,
+              "Text": "Ứng dụng .NET"
+            },
+            {
+              "Id": 103520,
+              "Text": "Tất cả đáp án đều đúng"
+            },
+            {
+              "Id": 103521,
+              "Text": "Ứng dụng Java"
+            },
+            {
+              "Id": 103522,
+              "Text": "Ứng dụng Visual Basic 6"
+            }
+          ]
+        }
       ]
     },
-
     {
       "id": "DBBS",
       "name": "Cơ sở dữ liệu",
       "arr": [
-        {"Id":24916,"Text":"Phát biểu nào dưới đây là đúng về quản lý dữ liệu?","Marks":1,"AnswerId":103344,"Answers":[{"Id":103343,"Text":"Thực hiện thao tác dữ liệu và truy vấn dữ liệu"},{"Id":103344,"Text":"Quản lý lưu trữ dữ liệu, thao tác dữ liệu và truy vấn dữ liệu"},{"Id":103345,"Text":"Quản lý lưu trữ dữ liệu, thêm, sửa, xóa dữ liệu"},{"Id":103346,"Text":"Cho phép lưu trữ dữ liệu và truy vấn dữ liệu"}]},{"Id":24917,"Text":"Hệ quản trị cơ sở dữ liệu không mang lại các lợi ích nào sau đây?","Marks":1,"AnswerId":103349,"Answers":[{"Id":103347,"Text":"Hỗ trợ các ngôn ngữ giao tiếp"},{"Id":103348,"Text":"Quản trị các cơ sở dữ liệu"},{"Id":103349,"Text":"Cung cấp các truy cập đến tổ chức dữ liệu vật lý"},{"Id":103350,"Text":"Có cơ chế an toàn, bảo mật cao"}]},{"Id":24918,"Text":"Phát biểu nào là đúng cho mô hình dữ liệu phân cấp?","Marks":1,"AnswerId":103354,"Answers":[{"Id":103351,"Text":"Liên hệ dữ liệu theo kiểu cha-con, mỗi cha có một con và mỗi con có một cha"},{"Id":103352,"Text":"Liên hệ dữ liệu có thể thừa kế giữa cha và con"},{"Id":103353,"Text":"Kiểu quan hệ là 1-N và N-N"},{"Id":103354,"Text":"Mỗi nút biểu diễn một thực thể dữ liệu và được tổ chức theo hình cây"}]},{"Id":24919,"Text":"Hệ quản trị cơ sở dữ liệu được hiểu là gì?","Marks":1,"AnswerId":103355,"Answers":[{"Id":103355,"Text":"Phần mềm giúp tạo cơ sở dữ liệu, cung cấp cơ chế lưu trữ, thao tác và truy cập cơ sở dữ liệu theo các mô hình cơ sở dữ liệu"},{"Id":103356,"Text":"Công cụ giúp lưu trữ, thao tác và truy cập cơ sở dữ liệu quan hệ"},{"Id":103357,"Text":"Phần mềm cung cấp cách thức tổ chức, thao tác dữ liệu theo các mô hình cơ sở dữ liệu"},{"Id":103358,"Text":"Công cụ giúp lưu trữ, thao tác và truy cập mô hình cơ sở dữ liệu"}]},{"Id":24920,"Text":"Dữ liệu (data) được mô tả dưới dạng nào dưới đây:","Marks":1,"AnswerId":103361,"Answers":[{"Id":103359,"Text":"Các ký tự, ký số"},{"Id":103360,"Text":"Hình ảnh, âm thanh"},{"Id":103361,"Text":"Các phương án đều đúng"},{"Id":103362,"Text":"Ký hiệu"}]}
+        {
+          "Id": 24916,
+          "Text": "Phát biểu nào dưới đây là đúng về quản lý dữ liệu?",
+          "Marks": 1,
+          "AnswerId": 103344,
+          "Answers": [
+            {
+              "Id": 103343,
+              "Text": "Thực hiện thao tác dữ liệu và truy vấn dữ liệu"
+            },
+            {
+              "Id": 103344,
+              "Text": "Quản lý lưu trữ dữ liệu, thao tác dữ liệu và truy vấn dữ liệu"
+            },
+            {
+              "Id": 103345,
+              "Text": "Quản lý lưu trữ dữ liệu, thêm, sửa, xóa dữ liệu"
+            },
+            {
+              "Id": 103346,
+              "Text": "Cho phép lưu trữ dữ liệu và truy vấn dữ liệu"
+            }
+          ]
+        },
+        {
+          "Id": 24917,
+          "Text": "Hệ quản trị cơ sở dữ liệu không mang lại các lợi ích nào sau đây?",
+          "Marks": 1,
+          "AnswerId": 103349,
+          "Answers": [
+            {
+              "Id": 103347,
+              "Text": "Hỗ trợ các ngôn ngữ giao tiếp"
+            },
+            {
+              "Id": 103348,
+              "Text": "Quản trị các cơ sở dữ liệu"
+            },
+            {
+              "Id": 103349,
+              "Text": "Cung cấp các truy cập đến tổ chức dữ liệu vật lý"
+            },
+            {
+              "Id": 103350,
+              "Text": "Có cơ chế an toàn, bảo mật cao"
+            }
+          ]
+        },
+        {
+          "Id": 24918,
+          "Text": "Phát biểu nào là đúng cho mô hình dữ liệu phân cấp?",
+          "Marks": 1,
+          "AnswerId": 103354,
+          "Answers": [
+            {
+              "Id": 103351,
+              "Text": "Liên hệ dữ liệu theo kiểu cha-con, mỗi cha có một con và mỗi con có một cha"
+            },
+            {
+              "Id": 103352,
+              "Text": "Liên hệ dữ liệu có thể thừa kế giữa cha và con"
+            },
+            {
+              "Id": 103353,
+              "Text": "Kiểu quan hệ là 1-N và N-N"
+            },
+            {
+              "Id": 103354,
+              "Text": "Mỗi nút biểu diễn một thực thể dữ liệu và được tổ chức theo hình cây"
+            }
+          ]
+        },
+        {
+          "Id": 24919,
+          "Text": "Hệ quản trị cơ sở dữ liệu được hiểu là gì?",
+          "Marks": 1,
+          "AnswerId": 103355,
+          "Answers": [
+            {
+              "Id": 103355,
+              "Text": "Phần mềm giúp tạo cơ sở dữ liệu, cung cấp cơ chế lưu trữ, thao tác và truy cập cơ sở dữ liệu theo các mô hình cơ sở dữ liệu"
+            },
+            {
+              "Id": 103356,
+              "Text": "Công cụ giúp lưu trữ, thao tác và truy cập cơ sở dữ liệu quan hệ"
+            },
+            {
+              "Id": 103357,
+              "Text": "Phần mềm cung cấp cách thức tổ chức, thao tác dữ liệu theo các mô hình cơ sở dữ liệu"
+            },
+            {
+              "Id": 103358,
+              "Text": "Công cụ giúp lưu trữ, thao tác và truy cập mô hình cơ sở dữ liệu"
+            }
+          ]
+        },
+        {
+          "Id": 24920,
+          "Text": "Dữ liệu (data) được mô tả dưới dạng nào dưới đây:",
+          "Marks": 1,
+          "AnswerId": 103361,
+          "Answers": [
+            {
+              "Id": 103359,
+              "Text": "Các ký tự, ký số"
+            },
+            {
+              "Id": 103360,
+              "Text": "Hình ảnh, âm thanh"
+            },
+            {
+              "Id": 103361,
+              "Text": "Các phương án đều đúng"
+            },
+            {
+              "Id": 103362,
+              "Text": "Ký hiệu"
+            }
+          ]
+        }
       ]
     },
-
     {
       "id": "GAME",
       "name": "Lập trình game 2D",
       "arr": [
-        {"Id":25420,"Text":"Đâu không phải là đặc điểm của Unity?","Marks":1,"AnswerId":105301,"Answers":[{"Id":105299,"Text":"Lighting"},{"Id":105300,"Text":"Rendering"},{"Id":105301,"Text":"Assets"},{"Id":105302,"Text":"Physics"}]},{"Id":25421,"Text":"Để hiển thị mọi thông tin về đối tượng đang làm việc một cách chi tiết, kể cả những Components được đính kèm và những thuộc tính của nó ta sử dụng mục nào sau đây?","Marks":1,"AnswerId":105303,"Answers":[{"Id":105303,"Text":"Inspector"},{"Id":105304,"Text":"Project"},{"Id":105305,"Text":"Hierachy"},{"Id":105306,"Text":"Game"}]},{"Id":25422,"Text":"Thanh công cụ nào sau đây điều khiển việc bố trí giao diện màn hình?","Marks":1,"AnswerId":105309,"Answers":[{"Id":105307,"Text":"Control Object"},{"Id":105308,"Text":"Layers"},{"Id":105309,"Text":"Layout"},{"Id":105310,"Text":"TestGame"}]},{"Id":25423,"Text":"Trên thanh công cụ Control Object, công cụ nào cho phép di chuyển đến một khu vực nào đó trong Scene bằng cách kéo thả chuột?","Marks":1,"AnswerId":105312,"Answers":[{"Id":105311,"Text":"Rotate tool"},{"Id":105312,"Text":"Hand tool"},{"Id":105313,"Text":"Scale tool"},{"Id":105314,"Text":"Move tool"}]},{"Id":25424,"Text":"Networking không cung cấp tính năng nào sau đây?","Marks":1,"AnswerId":105315,"Answers":[{"Id":105315,"Text":"Physics"},{"Id":105316,"Text":"Realtime Networking"},{"Id":105317,"Text":"Remote Procedure Call"},{"Id":105318,"Text":"State Synchronization"}]}
+        {
+          "Id": 25420,
+          "Text": "Đâu không phải là đặc điểm của Unity?",
+          "Marks": 1,
+          "AnswerId": 105301,
+          "Answers": [
+            {
+              "Id": 105299,
+              "Text": "Lighting"
+            },
+            {
+              "Id": 105300,
+              "Text": "Rendering"
+            },
+            {
+              "Id": 105301,
+              "Text": "Assets"
+            },
+            {
+              "Id": 105302,
+              "Text": "Physics"
+            }
+          ]
+        },
+        {
+          "Id": 25421,
+          "Text": "Để hiển thị mọi thông tin về đối tượng đang làm việc một cách chi tiết, kể cả những Components được đính kèm và những thuộc tính của nó ta sử dụng mục nào sau đây?",
+          "Marks": 1,
+          "AnswerId": 105303,
+          "Answers": [
+            {
+              "Id": 105303,
+              "Text": "Inspector"
+            },
+            {
+              "Id": 105304,
+              "Text": "Project"
+            },
+            {
+              "Id": 105305,
+              "Text": "Hierachy"
+            },
+            {
+              "Id": 105306,
+              "Text": "Game"
+            }
+          ]
+        },
+        {
+          "Id": 25422,
+          "Text": "Thanh công cụ nào sau đây điều khiển việc bố trí giao diện màn hình?",
+          "Marks": 1,
+          "AnswerId": 105309,
+          "Answers": [
+            {
+              "Id": 105307,
+              "Text": "Control Object"
+            },
+            {
+              "Id": 105308,
+              "Text": "Layers"
+            },
+            {
+              "Id": 105309,
+              "Text": "Layout"
+            },
+            {
+              "Id": 105310,
+              "Text": "TestGame"
+            }
+          ]
+        },
+        {
+          "Id": 25423,
+          "Text": "Trên thanh công cụ Control Object, công cụ nào cho phép di chuyển đến một khu vực nào đó trong Scene bằng cách kéo thả chuột?",
+          "Marks": 1,
+          "AnswerId": 105312,
+          "Answers": [
+            {
+              "Id": 105311,
+              "Text": "Rotate tool"
+            },
+            {
+              "Id": 105312,
+              "Text": "Hand tool"
+            },
+            {
+              "Id": 105313,
+              "Text": "Scale tool"
+            },
+            {
+              "Id": 105314,
+              "Text": "Move tool"
+            }
+          ]
+        },
+        {
+          "Id": 25424,
+          "Text": "Networking không cung cấp tính năng nào sau đây?",
+          "Marks": 1,
+          "AnswerId": 105315,
+          "Answers": [
+            {
+              "Id": 105315,
+              "Text": "Physics"
+            },
+            {
+              "Id": 105316,
+              "Text": "Realtime Networking"
+            },
+            {
+              "Id": 105317,
+              "Text": "Remote Procedure Call"
+            },
+            {
+              "Id": 105318,
+              "Text": "State Synchronization"
+            }
+          ]
+        }
       ]
     },
-
     {
       "id": "HTCS",
       "name": "HTML5 và CSS3",
       "arr": [
-        {"Id":25820,"Text":"Sử dụng phần tử nào của HTML5 để xem phim trên Web?","Marks":1,"AnswerId":106849,"Answers":[{"Id":106846,"Text":"\u003cyoutube\u003e"},{"Id":106847,"Text":"\u003cmedia\u003e"},{"Id":106848,"Text":"\u003cclip\u003e"},{"Id":106849,"Text":"\u003cvideo\u003e"},{"Id":106850,"Text":"\u003ccanvas\u003e"},{"Id":106851,"Text":"\u003cfilm\u003e"}]},{"Id":25821,"Text":"Trong HTML5, chúng ta sử dụng thẻ mới nào để tạo ra nội dung cho vùng Header của trang?","Marks":1,"AnswerId":106857,"Answers":[{"Id":106852,"Text":"\u003cdiv class=\"head\"\u003e\u003c/div\u003e"},{"Id":106853,"Text":"\u003cdiv class=\"header\"\u003e\u003c/div\u003e"},{"Id":106854,"Text":"\u003chead\u003e\u003c/head\u003e"},{"Id":106855,"Text":"\u003cdiv id=\"head\"\u003e\u003c/div\u003e"},{"Id":106856,"Text":"\u003cdiv id=\"header\"\u003e\u003c/div\u003e"},{"Id":106857,"Text":"\u003cheader\u003e\u003c/header\u003e"}]},{"Id":25822,"Text":"Muốn thực hiện vẽ trong HTML5, phải sử dụng phần tử nào sau đây?","Marks":1,"AnswerId":106862,"Answers":[{"Id":106858,"Text":"\u003cp\u003e"},{"Id":106859,"Text":"\u003caudio\u003e"},{"Id":106860,"Text":"\u003cdraw\u003e"},{"Id":106861,"Text":"\u003cvideo\u003e"},{"Id":106862,"Text":"\u003ccanvas\u003e"},{"Id":106863,"Text":"\u003cdiv\u003e"}]},{"Id":25823,"Text":"Đâu là công nghệ mới của HTML5 cho phép người dùng lưu trữ dữ liệu ngay trên trình duyệt Web?","Marks":1,"AnswerId":106865,"Answers":[{"Id":106864,"Text":"Web 2.0"},{"Id":106865,"Text":"Web storage"},{"Id":106866,"Text":"Web server"},{"Id":106867,"Text":"Web code"},{"Id":106868,"Text":"Web 1.0"},{"Id":106869,"Text":"Web design"}]},{"Id":25824,"Text":"Phần tử transitions thuộc công nghệ nào sau đây?","Marks":1,"AnswerId":106872,"Answers":[{"Id":106870,"Text":"HTML5"},{"Id":106871,"Text":"HTML4"},{"Id":106872,"Text":"CSS3"},{"Id":106873,"Text":"CSS2"},{"Id":106874,"Text":"CSS4"},{"Id":106875,"Text":"HTML6"}]}
+        {
+          "Id": 25820,
+          "Text": "Sử dụng phần tử nào của HTML5 để xem phim trên Web?",
+          "Marks": 1,
+          "AnswerId": 106849,
+          "Answers": [
+            {
+              "Id": 106846,
+              "Text": "<youtube>"
+            },
+            {
+              "Id": 106847,
+              "Text": "<media>"
+            },
+            {
+              "Id": 106848,
+              "Text": "<clip>"
+            },
+            {
+              "Id": 106849,
+              "Text": "<video>"
+            },
+            {
+              "Id": 106850,
+              "Text": "<canvas>"
+            },
+            {
+              "Id": 106851,
+              "Text": "<film>"
+            }
+          ]
+        },
+        {
+          "Id": 25821,
+          "Text": "Trong HTML5, chúng ta sử dụng thẻ mới nào để tạo ra nội dung cho vùng Header của trang?",
+          "Marks": 1,
+          "AnswerId": 106857,
+          "Answers": [
+            {
+              "Id": 106852,
+              "Text": "<div class=\"head\"></div>"
+            },
+            {
+              "Id": 106853,
+              "Text": "<div class=\"header\"></div>"
+            },
+            {
+              "Id": 106854,
+              "Text": "<head></head>"
+            },
+            {
+              "Id": 106855,
+              "Text": "<div id=\"head\"></div>"
+            },
+            {
+              "Id": 106856,
+              "Text": "<div id=\"header\"></div>"
+            },
+            {
+              "Id": 106857,
+              "Text": "<header></header>"
+            }
+          ]
+        },
+        {
+          "Id": 25822,
+          "Text": "Muốn thực hiện vẽ trong HTML5, phải sử dụng phần tử nào sau đây?",
+          "Marks": 1,
+          "AnswerId": 106862,
+          "Answers": [
+            {
+              "Id": 106858,
+              "Text": "<p>"
+            },
+            {
+              "Id": 106859,
+              "Text": "<audio>"
+            },
+            {
+              "Id": 106860,
+              "Text": "<draw>"
+            },
+            {
+              "Id": 106861,
+              "Text": "<video>"
+            },
+            {
+              "Id": 106862,
+              "Text": "<canvas>"
+            },
+            {
+              "Id": 106863,
+              "Text": "<div>"
+            }
+          ]
+        },
+        {
+          "Id": 25823,
+          "Text": "Đâu là công nghệ mới của HTML5 cho phép người dùng lưu trữ dữ liệu ngay trên trình duyệt Web?",
+          "Marks": 1,
+          "AnswerId": 106865,
+          "Answers": [
+            {
+              "Id": 106864,
+              "Text": "Web 2.0"
+            },
+            {
+              "Id": 106865,
+              "Text": "Web storage"
+            },
+            {
+              "Id": 106866,
+              "Text": "Web server"
+            },
+            {
+              "Id": 106867,
+              "Text": "Web code"
+            },
+            {
+              "Id": 106868,
+              "Text": "Web 1.0"
+            },
+            {
+              "Id": 106869,
+              "Text": "Web design"
+            }
+          ]
+        },
+        {
+          "Id": 25824,
+          "Text": "Phần tử transitions thuộc công nghệ nào sau đây?",
+          "Marks": 1,
+          "AnswerId": 106872,
+          "Answers": [
+            {
+              "Id": 106870,
+              "Text": "HTML5"
+            },
+            {
+              "Id": 106871,
+              "Text": "HTML4"
+            },
+            {
+              "Id": 106872,
+              "Text": "CSS3"
+            },
+            {
+              "Id": 106873,
+              "Text": "CSS2"
+            },
+            {
+              "Id": 106874,
+              "Text": "CSS4"
+            },
+            {
+              "Id": 106875,
+              "Text": "HTML6"
+            }
+          ]
+        }
       ]
     },
-
     {
       "id": "INMA",
       "name": "Internet Marketing",
       "arr": [
-         {"Id":24711,"Text":"Trước khi viết một thông điệp marketing cho website của bạn, bạn cần phải:","Marks":1,"AnswerId":102534,"Answers":[{"Id":102531,"Text":"Tìm hiểu xem khách hàng lý tưởng của mình bao nhiêu tuổi"},{"Id":102532,"Text":"Tìm hiểu xem những đối thủ đang viết như thế nào và bắt chước họ"},{"Id":102533,"Text":"Tìm hiểu xem khách hàng lý tưởng của mình giới tính là gì"},{"Id":102534,"Text":"Tìm hiểu xem khách hàng lý tưởng của mình là ai, đặc điểm của họ là gì"}]},{"Id":24712,"Text":"Twitter tạo nên sự khác biệt so với tất cả các đối thủ trong lĩnh vực blog cá nhân bằng cách:","Marks":1,"AnswerId":102535,"Answers":[{"Id":102535,"Text":"Chỉ cho phép mỗi bài viết dài không quá 140 ký tự để bắt họ phải cung cấp những bài viết với hàm lượng “mật độ thông tin” cao nhất"},{"Id":102536,"Text":"Qui định mỗi người chỉ được phép tạo ra một tài khoản"},{"Id":102537,"Text":"Cho phép mỗi bài viết mà user đăng lên được phép viết dài vô hạn"},{"Id":102538,"Text":"Cho phép mỗi bài viết mà user đăng lên có thể được định dạng đẹp đẽ và dễ dàng"}]},{"Id":24713,"Text":"Hai bí quyết để đánh tan sự hoài nghi của khách hàng khi họ vào mua hàng online là (hãy chọn một đáp án đúng):","Marks":1,"AnswerId":102541,"Answers":[{"Id":102539,"Text":"Đưa ra thật nhiều lợi ích của sản phẩm và đưa vào thật nhiều ảnh đẹp về sản phẩm"},{"Id":102540,"Text":"Đưa ra bằng chứng chứng minh sản phẩm của bạn hoạt động tốt và viết nhiều bài báo PR về sản phẩm đó"},{"Id":102541,"Text":"Đưa ra bằng chứng chứng minh sản phẩm của bạn hoạt động tốt và đưa ra chính sách có lợi nhất cho khách hàng nếu sản phẩm không hoạt động như ý"},{"Id":102542,"Text":"Đưa ra thật nhiều đặc tính nổi trội của sản phẩm và viết nhiều bài viết hay về sản phẩm"}]},{"Id":24714,"Text":"Apple đã làm điều gì để iPhone trở nên khác biệt và nổi bật vào thời điểm ra đời năm 2007? (Hãy chọn đáp án hợp lý nhất)","Marks":1,"AnswerId":102546,"Answers":[{"Id":102543,"Text":"Apple đã đưa ra chức năng Multi-Touch (chạm đa điểm) trong iPhone"},{"Id":102544,"Text":"Apple đã đưa thêm rất nhiều tính năng và đặc tính vào trong sản phẩm iPhone"},{"Id":102545,"Text":"Apple đã đưa vào chức năng bàn phím ảo trong iPhone"},{"Id":102546,"Text":"Apple đã đưa vào chức năng Multi-Touch (chạm đa điểm) trong iPhone và đưa ra kho ứng dụng Apple Store"}]},{"Id":24715,"Text":"Cách mà Google đánh bại Yahoo để thống lĩnh thị trường dịch vụ tìm kiếm online là:","Marks":1,"AnswerId":102549,"Answers":[{"Id":102547,"Text":"Đưa thêm nhiều tính năng, nhiều đặc tính sản phẩm hơn Yahoo"},{"Id":102548,"Text":"Làm cho giao diện đẹp đẽ hơn Yahoo"},{"Id":102549,"Text":"Đưa cho user ít chức năng, ít đặc tính hơn, nhưng trả lại kết quả tìm kiếm chính xác và chất lượng hơn Yahoo"},{"Id":102550,"Text":"Làm cho giao diện đơn giản hơn Yahoo"}]}
+        {
+          "Id": 24711,
+          "Text": "Trước khi viết một thông điệp marketing cho website của bạn, bạn cần phải:",
+          "Marks": 1,
+          "AnswerId": 102534,
+          "Answers": [
+            {
+              "Id": 102531,
+              "Text": "Tìm hiểu xem khách hàng lý tưởng của mình bao nhiêu tuổi"
+            },
+            {
+              "Id": 102532,
+              "Text": "Tìm hiểu xem những đối thủ đang viết như thế nào và bắt chước họ"
+            },
+            {
+              "Id": 102533,
+              "Text": "Tìm hiểu xem khách hàng lý tưởng của mình giới tính là gì"
+            },
+            {
+              "Id": 102534,
+              "Text": "Tìm hiểu xem khách hàng lý tưởng của mình là ai, đặc điểm của họ là gì"
+            }
+          ]
+        },
+        {
+          "Id": 24712,
+          "Text": "Twitter tạo nên sự khác biệt so với tất cả các đối thủ trong lĩnh vực blog cá nhân bằng cách:",
+          "Marks": 1,
+          "AnswerId": 102535,
+          "Answers": [
+            {
+              "Id": 102535,
+              "Text": "Chỉ cho phép mỗi bài viết dài không quá 140 ký tự để bắt họ phải cung cấp những bài viết với hàm lượng “mật độ thông tin” cao nhất"
+            },
+            {
+              "Id": 102536,
+              "Text": "Qui định mỗi người chỉ được phép tạo ra một tài khoản"
+            },
+            {
+              "Id": 102537,
+              "Text": "Cho phép mỗi bài viết mà user đăng lên được phép viết dài vô hạn"
+            },
+            {
+              "Id": 102538,
+              "Text": "Cho phép mỗi bài viết mà user đăng lên có thể được định dạng đẹp đẽ và dễ dàng"
+            }
+          ]
+        },
+        {
+          "Id": 24713,
+          "Text": "Hai bí quyết để đánh tan sự hoài nghi của khách hàng khi họ vào mua hàng online là (hãy chọn một đáp án đúng):",
+          "Marks": 1,
+          "AnswerId": 102541,
+          "Answers": [
+            {
+              "Id": 102539,
+              "Text": "Đưa ra thật nhiều lợi ích của sản phẩm và đưa vào thật nhiều ảnh đẹp về sản phẩm"
+            },
+            {
+              "Id": 102540,
+              "Text": "Đưa ra bằng chứng chứng minh sản phẩm của bạn hoạt động tốt và viết nhiều bài báo PR về sản phẩm đó"
+            },
+            {
+              "Id": 102541,
+              "Text": "Đưa ra bằng chứng chứng minh sản phẩm của bạn hoạt động tốt và đưa ra chính sách có lợi nhất cho khách hàng nếu sản phẩm không hoạt động như ý"
+            },
+            {
+              "Id": 102542,
+              "Text": "Đưa ra thật nhiều đặc tính nổi trội của sản phẩm và viết nhiều bài viết hay về sản phẩm"
+            }
+          ]
+        },
+        {
+          "Id": 24714,
+          "Text": "Apple đã làm điều gì để iPhone trở nên khác biệt và nổi bật vào thời điểm ra đời năm 2007? (Hãy chọn đáp án hợp lý nhất)",
+          "Marks": 1,
+          "AnswerId": 102546,
+          "Answers": [
+            {
+              "Id": 102543,
+              "Text": "Apple đã đưa ra chức năng Multi-Touch (chạm đa điểm) trong iPhone"
+            },
+            {
+              "Id": 102544,
+              "Text": "Apple đã đưa thêm rất nhiều tính năng và đặc tính vào trong sản phẩm iPhone"
+            },
+            {
+              "Id": 102545,
+              "Text": "Apple đã đưa vào chức năng bàn phím ảo trong iPhone"
+            },
+            {
+              "Id": 102546,
+              "Text": "Apple đã đưa vào chức năng Multi-Touch (chạm đa điểm) trong iPhone và đưa ra kho ứng dụng Apple Store"
+            }
+          ]
+        },
+        {
+          "Id": 24715,
+          "Text": "Cách mà Google đánh bại Yahoo để thống lĩnh thị trường dịch vụ tìm kiếm online là:",
+          "Marks": 1,
+          "AnswerId": 102549,
+          "Answers": [
+            {
+              "Id": 102547,
+              "Text": "Đưa thêm nhiều tính năng, nhiều đặc tính sản phẩm hơn Yahoo"
+            },
+            {
+              "Id": 102548,
+              "Text": "Làm cho giao diện đẹp đẽ hơn Yahoo"
+            },
+            {
+              "Id": 102549,
+              "Text": "Đưa cho user ít chức năng, ít đặc tính hơn, nhưng trả lại kết quả tìm kiếm chính xác và chất lượng hơn Yahoo"
+            },
+            {
+              "Id": 102550,
+              "Text": "Làm cho giao diện đơn giản hơn Yahoo"
+            }
+          ]
+        }
       ]
     },
-
     {
       "id": "JAAV",
       "name": "Lập trình Java nâng cao",
       "arr": [
-         {"Id":26120,"Text":"Package nào chứa các class kiểu dữ liệu","Marks":1,"AnswerId":108224,"Answers":[{"Id":108224,"Text":"java.lang"},{"Id":108225,"Text":"java.io"},{"Id":108226,"Text":"java.ouput"},{"Id":108227,"Text":"java.swing"},{"Id":108228,"Text":"java.util"},{"Id":108229,"Text":"java.input"}]},{"Id":26121,"Text":"Trong file MyCode.java chứa đoạn code sau: public class MyClass{}public interface MyInterface{}Mô tả nào đúng với đoạn code này trong file MyCode?","Marks":1,"AnswerId":108230,"Answers":[{"Id":108230,"Text":"Đoạn code trên không có phương thức main()"},{"Id":108231,"Text":"MyClass phải kế thừa từ MyInterface"},{"Id":108232,"Text":"Không thể có một public class hoặc interface có cùng tên trong file code Java này."},{"Id":108233,"Text":"MyClass phải thực thi MyInterface"},{"Id":108234,"Text":"Phải có một public class hoặc interface có tên là MyCode"},{"Id":108235,"Text":"Phải có nhiều public class hoặc interface có tên là MyCode"}]},{"Id":26122,"Text":"Trong Java, 5/2 có kết quả là:","Marks":1,"AnswerId":108240,"Answers":[{"Id":108236,"Text":"0"},{"Id":108237,"Text":"Có lỗi"},{"Id":108238,"Text":"3"},{"Id":108239,"Text":"2.5"},{"Id":108240,"Text":"2"}]},{"Id":26123,"Text":"Trong một package, đối với một thành phần (member) khi không khai báo từ khóa private, public, protected thì quyền truy cập đối với thành phần đó là","Marks":1,"AnswerId":108244,"Answers":[{"Id":108241,"Text":"Có thể truy cập bởi các class bên ngoài package."},{"Id":108242,"Text":"Chỉ có thể truy cập trong cùng một class."},{"Id":108243,"Text":"Có thể truy cập bởi các class kế thừa từ class này."},{"Id":108244,"Text":"Có thể truy cập bởi các class trong cùng một package."},{"Id":108245,"Text":"Có thể truy cập bởi các class là super của class này."}]},{"Id":26124,"Text":"Chọn câu trả lời đúng:interface chứa các method là","Marks":1,"AnswerId":108248,"Answers":[{"Id":108246,"Text":"Các method là final"},{"Id":108247,"Text":"Các method protected"},{"Id":108248,"Text":"Tất cả các method abstract"},{"Id":108249,"Text":"Các method là public"},{"Id":108250,"Text":"Các method là private"},{"Id":108251,"Text":"Một số method là abstract"}]}
+        {
+          "Id": 26120,
+          "Text": "Package nào chứa các class kiểu dữ liệu",
+          "Marks": 1,
+          "AnswerId": 108224,
+          "Answers": [
+            {
+              "Id": 108224,
+              "Text": "java.lang"
+            },
+            {
+              "Id": 108225,
+              "Text": "java.io"
+            },
+            {
+              "Id": 108226,
+              "Text": "java.ouput"
+            },
+            {
+              "Id": 108227,
+              "Text": "java.swing"
+            },
+            {
+              "Id": 108228,
+              "Text": "java.util"
+            },
+            {
+              "Id": 108229,
+              "Text": "java.input"
+            }
+          ]
+        },
+        {
+          "Id": 26121,
+          "Text": "Trong file MyCode.java chứa đoạn code sau: public class MyClass{}public interface MyInterface{}Mô tả nào đúng với đoạn code này trong file MyCode?",
+          "Marks": 1,
+          "AnswerId": 108230,
+          "Answers": [
+            {
+              "Id": 108230,
+              "Text": "Đoạn code trên không có phương thức main()"
+            },
+            {
+              "Id": 108231,
+              "Text": "MyClass phải kế thừa từ MyInterface"
+            },
+            {
+              "Id": 108232,
+              "Text": "Không thể có một public class hoặc interface có cùng tên trong file code Java này."
+            },
+            {
+              "Id": 108233,
+              "Text": "MyClass phải thực thi MyInterface"
+            },
+            {
+              "Id": 108234,
+              "Text": "Phải có một public class hoặc interface có tên là MyCode"
+            },
+            {
+              "Id": 108235,
+              "Text": "Phải có nhiều public class hoặc interface có tên là MyCode"
+            }
+          ]
+        },
+        {
+          "Id": 26122,
+          "Text": "Trong Java, 5/2 có kết quả là:",
+          "Marks": 1,
+          "AnswerId": 108240,
+          "Answers": [
+            {
+              "Id": 108236,
+              "Text": "0"
+            },
+            {
+              "Id": 108237,
+              "Text": "Có lỗi"
+            },
+            {
+              "Id": 108238,
+              "Text": "3"
+            },
+            {
+              "Id": 108239,
+              "Text": "2.5"
+            },
+            {
+              "Id": 108240,
+              "Text": "2"
+            }
+          ]
+        },
+        {
+          "Id": 26123,
+          "Text": "Trong một package, đối với một thành phần (member) khi không khai báo từ khóa private, public, protected thì quyền truy cập đối với thành phần đó là",
+          "Marks": 1,
+          "AnswerId": 108244,
+          "Answers": [
+            {
+              "Id": 108241,
+              "Text": "Có thể truy cập bởi các class bên ngoài package."
+            },
+            {
+              "Id": 108242,
+              "Text": "Chỉ có thể truy cập trong cùng một class."
+            },
+            {
+              "Id": 108243,
+              "Text": "Có thể truy cập bởi các class kế thừa từ class này."
+            },
+            {
+              "Id": 108244,
+              "Text": "Có thể truy cập bởi các class trong cùng một package."
+            },
+            {
+              "Id": 108245,
+              "Text": "Có thể truy cập bởi các class là super của class này."
+            }
+          ]
+        },
+        {
+          "Id": 26124,
+          "Text": "Chọn câu trả lời đúng:interface chứa các method là",
+          "Marks": 1,
+          "AnswerId": 108248,
+          "Answers": [
+            {
+              "Id": 108246,
+              "Text": "Các method là final"
+            },
+            {
+              "Id": 108247,
+              "Text": "Các method protected"
+            },
+            {
+              "Id": 108248,
+              "Text": "Tất cả các method abstract"
+            },
+            {
+              "Id": 108249,
+              "Text": "Các method là public"
+            },
+            {
+              "Id": 108250,
+              "Text": "Các method là private"
+            },
+            {
+              "Id": 108251,
+              "Text": "Một số method là abstract"
+            }
+          ]
+        }
       ]
     }
-
   ]
 }
