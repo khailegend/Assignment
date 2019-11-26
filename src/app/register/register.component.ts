@@ -14,6 +14,14 @@ export class RegisterComponent implements OnInit {
     drity : null ,
     touched : null
   }
+  Password2 = {
+    drity : null ,
+    touched : null
+  }
+  Email = {
+    drity : null ,
+    touched : null
+  }
   student = {
     firstname: null,
     lastname: null,
