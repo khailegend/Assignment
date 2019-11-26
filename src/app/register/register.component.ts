@@ -10,7 +10,9 @@ import { last } from 'rxjs/operators';
 })
 export class RegisterComponent implements OnInit {
   @Input() students: Student[];
-  drity = null;
+  Password = {
+    drity : null
+  }
   student = {
     firstname: null,
     lastname: null,
