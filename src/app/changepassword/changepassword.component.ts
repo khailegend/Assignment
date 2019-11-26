@@ -49,6 +49,6 @@ export class ChangepasswordComponent implements OnInit {
   }
 
   uppasscurrent() {
-    document.getElementById("newFormPassword").value = null;
+    
   }
 }
