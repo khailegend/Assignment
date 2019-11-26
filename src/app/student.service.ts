@@ -21,9 +21,9 @@ const httpOptions = {
 @Injectable()
 export class StudentService {
 
-  private studentsURL = 'http://localhost:4000/student';
-  private subjectsURL = 'http://localhost:4000/subject';
-  private testURL = 'http://localhost:4000/test';
+  private studentsURL = 'http://khailegend9.herokuapp.com/student';
+  private subjectsURL = 'http://khailegend9.herokuapp.com/subject';
+  private testURL = 'http://khailegend9.herokuapp.com/test';
   
   
     
