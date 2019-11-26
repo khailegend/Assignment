@@ -26,26 +26,16 @@
                     <input required type="email" #Email="ngModel"
                         [pattern]='"^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$"' #email id="email"
                         name="email" [(ngModel)]="student.email" class="form-control" placeholder="E-mail">
-                    <div *ngIf="Email.errors && (Email.touched||Email.drity)">
-                        <div *ngIf="Email.errors.required" class="alert alert-danger">
-                            <small>enter your email</small>
-                        </div>
-                        <div *ngIf="Email.errors.pattern" class="alert alert-danger">
-                            <small>Email invalidate</small>
-                        </div>
-                    </div>
+                    
                 </div>
                 <!-- Password -->
                 <div class="form-group">
                     <input required type="password" minlength="8" #password #Password="ngModel" name="password"
                         [(ngModel)]="student.password" class="form-control" placeholder="Password"
                         aria-describedby="defaultRegisterFormPasswordHelpBlock">
-                    <div *ngIf="Password.errors && (Password.touched||Password.drity)">
-                        <div *ngIf="Password.errors.required" class="alert alert-danger">
-                            <small>Please enter your password</small>
-                        </div>
-                        <div *ngIf="Password.errors.minlength">
-                            <small class="text-danger">must be greater than 8 characters</small>
+                    <div >
+                        <div >
+                            <small>must be greater than 8 characters</small>
                         </div>
                     </div>
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
@@ -59,14 +49,7 @@
                     <small id="defaultRegisterFormPasswordHelpBlock2" class="form-text text-muted mb-4">
 
                     </small>
-                    <div *ngIf="Password2.errors && (Password2.touched||Password2.drity)">
-                        <div *ngIf="Password2.errors.required" class="alert alert-danger">
-                            <small>Please enter your password again</small>
-                        </div>
-                        <div *ngIf="Password2.errors.again">
-                            <small class="text-danger">Retype the email incorrectly</small>
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <!-- Phone number -->
