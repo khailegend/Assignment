@@ -21,7 +21,7 @@ const httpOptions = {
 @Injectable()
 export class StudentService {
 
-  private studentsURL = '../db.json/student';
+  private studentsURL = 'http://localhost:3000/student';
   private subjectsURL = 'http://localhost:3000/subject';
   private testURL = 'http://localhost:3000/test';
   
